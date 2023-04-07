@@ -1,0 +1,36 @@
+.but {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubbly-button {
+    padding: 10px 40px;
+    border-radius: 0.2rem;
+    background: #fbd266;
+    position: relative;
+    transition: 1s;
+    border: none;
+}
+
+.bubbly-button:hover {
+    background: #ffdc84;
+}
+
+.bubbly-button::after {
+    content:'';
+    position: absolute;
+    inset: 0;
+    border-radius: 0.2rem;
+    transition: 1s;
+    box-shadow: 0 0 30px 15px #ffdc84;
+    opacity: 0;
+}
+
+.bubbly-button:active::after {
+    transition: Os;
+    box-shadow: 0 0 0px 0px#ffdc84;
+    opacity: 1;
+}

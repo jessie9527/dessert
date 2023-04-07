@@ -1,0 +1,88 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "千層蛋糕(7吋)",
+            "price": 800,
+            "image_tag": "xxxx.png"
+        }
+        {
+            "id": 2,
+            "title": "巧克力千層蛋糕(7吋)",
+            "price": 850,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 3,
+            "title": "巧克力千層蛋糕(切片)",
+            "price": 90,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 4,
+            "title": "抹茶千層蛋糕(7吋)",
+            "price": 850,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 5,
+            "title": "抹茶千層蛋糕(切片)",
+            "price": 90,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 6,
+            "title": "巴斯克乳酪蛋糕(6吋)",
+            "price": 500,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 7,
+            "title": "巧克力巴斯克乳酪蛋糕(6吋)",
+            "price": 500,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 8,
+            "title": "曲奇餅乾單盒(原味)",
+            "price": 100,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 9,
+            "title": "曲奇餅乾單盒(巧克力)",
+            "price": 100,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 10,
+            "title": "曲奇餅乾單盒(抹茶)",
+            "price": 100,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 11,
+            "title": "曲奇餅乾單盒(綜合)",
+            "price": 100,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 12,
+            "title": "雪球餅乾單盒",
+            "price": 100,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 13,
+            "title": "馬林糖",
+            "price": 50,
+            "image_tag": "xxxx.png"
+        },
+        {
+            "id": 14,
+            "title": "芋頭酥",
+            "price": 30,
+            "image_tag": "xxxx.png"
+        }
+    ]
+}

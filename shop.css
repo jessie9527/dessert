@@ -1,0 +1,31 @@
+main h1 {
+    text-align: center;
+    font-family: noto sans tc, 微軟正黑體 ; 
+    font-weight: 600;
+    /* font-size: 34px; */
+}
+
+main p {
+    margin-left: 190px;
+    margin-right: auto;
+    line-height: 2;
+    font-family: noto sans tc, 微軟正黑體 ; 
+    font-size: 17px;
+}
+
+main div h4 {
+    margin-left: 200px;
+    margin-right: auto;
+    line-height: 2;
+    font-family: noto sans tc, 微軟正黑體 ; 
+    font-size: 25px;
+}
+
+main div pre {
+    margin-left: 200px;
+    margin-right: auto;
+    line-height: 2;
+    border-radius: 12px;
+    font-family: noto sans tc, 微軟正黑體 ; 
+    font-size: 17px;
+}

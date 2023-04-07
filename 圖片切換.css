@@ -1,0 +1,33 @@
+.imgbox {
+    width: 800px;
+    height: 500px;
+    max-width: 100%;
+    position: relative;
+    background: url(./onlineimg/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg) no-repeat;
+}
+.clip {
+    width: 100%;
+    height: 100%;
+    background: url(./onlineimg/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+.clip-2 {
+    background-image: url(./onlineimg/mae-mu-m9pzwmxm2rk-unsplash.jpg);
+
+    clip-path: polygon(43% 0,100% 0,38% 100%,13% 100%);
+}
+.clip-3 {
+    background-image:url(./onlineimg/shanthi-raja-s04Dw-DN0Vw-unsplash.jpg);
+    clip-path: polygon(100% 0,100% 0,100% 100%,38% 100%);
+}
+
+.imgbox:hover .clip{
+    clip-path: polygon(100% 0,100% 0,100% 100%,100% 100%);
+}
+
+.imgbox .clip:hover {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}

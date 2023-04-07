@@ -1,0 +1,172 @@
+.recipe {
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: relative; */
+    font-family: poppins;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:rgb(255,255,255,0);  
+    font-weight: 600;  
+}
+
+  @keyframes animate{
+    0%{
+      background-position: -500%;
+    }
+     100%{
+      background-position: 500%;
+    }
+  }
+
+main {
+    margin-top: 50px;
+}
+
+.title {
+    text-align:center;
+    font-family: Noto sans tc , 微軟正黑體 ; 
+    font-weight: 550;
+    font-size: 2.3rem;;
+}
+
+.cardwrap {
+    list-style:none;
+    margin:16px;
+    display: flex;
+    justify-content:center;
+}
+  
+.card {
+    width:340px;
+    height:360px;
+    align-items:center;
+    justify-content :center;
+    text-align:center;
+    background-color: lightgrey;
+    padding: 50px;
+    border-radius:12px;
+    /* backdrop-filter:blur(100px); */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 45px;
+}
+
+.list {
+    text-decoration:none;
+    color:#000211;
+    text-align:center;
+    justify-content:center;
+    font-family: Malgun Gothic, 微軟正黑體 ; 
+}
+
+#description h3 {
+    font-weight: 600;
+    font-family: Noto sans tc , 微軟正黑體 ; 
+    margin: 0 200px;
+    font-size: 2rem;
+}
+
+#description p {
+    font-family: Noto sans tc , 微軟正黑體 ; 
+    margin: 0 200px;
+    /* text-indent: 1cm; */
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+#food h3 {
+    font-weight: 600;
+    font-family: Noto sans tc , 微軟正黑體 ; 
+    margin: 0 200px;
+    font-size: 2rem;
+}
+
+#food div{
+    display: flex;
+}
+
+#food pre {
+    font-family: Noto sans tc , 微軟正黑體 ; 
+    margin: 0 0 0 220px;
+    font-size: 18px;
+    line-height: 2;
+}
+
+#food span {
+    font-family: Noto sans tc , 微軟正黑體 ; 
+    margin: 0 200px;
+    font-size: 18px;
+}
+
+#cook h3 {
+    font-weight: 600;
+    font-family: Noto sans tc , 微軟正黑體 ; 
+    margin: 0 200px;
+    font-size: 2rem;
+}
+
+#cook h4 {
+    font-family: Noto sans tc , 微軟正黑體 ; 
+    margin: 0 200px;
+}
+
+#cook pre {
+    font-family: Noto sans tc , 微軟正黑體 ; 
+    margin: 0 200px;
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+.gallery {
+    display: flex;
+    width: 900px; 
+    height: 300px;
+    place-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 378px; 
+    height: 283.5px;
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+  
+.gallery img:hover {
+    flex: 1 1 280px;
+    opacity: 1;
+}
+
+
+

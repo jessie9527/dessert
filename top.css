@@ -1,0 +1,175 @@
+.wrapper {
+    width: 1350px;
+    margin: 0 auto;
+    /* background-color: #f0f0f0; */
+}
+
+.shortcut {
+    height: 43px;
+    background-color:#333333;
+}
+  
+.shortcut .wrapper {
+    height: 43px;
+}
+
+.shortcut .wrapper ul {
+    float: right;
+}
+
+.shortcut .wrapper li {
+    float: right;
+    line-height: 45px;
+    list-style: none;
+}
+
+.shortcut .wrapper a {
+    padding: 0 10px;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.shortcut .wrapper a u {
+    display: inline-block;
+    margin-right: 6px;
+    width: 14px;
+    height: 13px;
+    background-image: url(./img/iconmonstr-paper-plane-2-16\ .png);
+    background-position: -2px -1px;
+}
+
+.shortcut .wrapper a b {
+    display: inline-block;
+    margin-right: 6px;
+    width: 14px;
+    height: 13px;
+    background-image: url(./img/iconmonstr-user-6-16.png);
+    background-position: -1px 0px;
+}
+
+.shortcut .wrapper a i {
+    display: inline-block;
+    margin-right: 6px;
+    width: 16px;
+    height: 13px;
+    background-image: url(./img/iconmonstr-shopping-cart-3-16.png);
+    background-position: 0px -2px;
+}
+
+/* .wrapper1 {
+    text-align: center;
+    width: 43px;
+  } */
+  
+  .search {
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 0.4s;
+  }
+  
+  .search:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .search:hover input {
+    max-width: 180px;
+  }
+  
+  .search input {
+    background: transparent;
+    border: 0;
+    max-width: 0;
+    padding: 0;
+    text-indent: 10px;
+    color: #f9f9f9;
+    font-size: 16px;
+    font-family: "Poppins";
+    outline: none;
+    transition: 0.4s;
+    margin: -10px;
+  }
+  
+  .search input::placeholder {
+    color: rgba(255, 255, 255, 0.375);
+  }
+  
+  .search span {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    background:black;
+    color: #f9f9f9;
+    border-radius: inherit;
+    font-size: 16px;
+    pointer-events: none;
+  }
+
+/* .shortcut .wrapper a u {
+    display: inline-block;
+    margin-right: 6px;
+    width: 14px;
+    height: 14px;
+    background-image: url(./img/iconmonstr-magnifier-2-16.png);
+    background-position: 0px 0px;
+} */
+
+/* div {
+    text-align: center;
+}
+
+.welcome {
+    font-family: Noto Sans,  Poppins; 
+    font-size: 36px;
+} */
+
+
+.footer {
+    height: 250px;
+    background-color: #edeaea;
+}
+
+.footer .wrapper {
+    width: 1300px;
+    padding-top: 35px;
+    display: flex;
+    justify-content:space-around;
+    font-family: Malgun Gothic, 微軟正黑體 ; 
+}
+
+.fb:hover{
+    border-radius: 50%;
+    background-color: rgb(138, 187, 227);
+}
+
+.ig:hover{
+    border-radius: 50%;
+    background-color: rgb(183, 120, 135);
+}
+
+.phone:hover{
+    border-radius: 50%;
+    background-color: rgb(179, 208, 176);
+}
+
+.line:hover{
+    border-radius: 50%;
+    background-color: rgb(179, 208, 176);
+}
+
+  
+.footer {
+    position: relative; /* 讓版權資訊相對於 .footer 定位 */
+    text-align: center; /* 將文字置中 */
+}
+  
+.footer .copyright {
+    position: absolute; /* 讓版權資訊相對於 .footer 定位 */
+    bottom: 0; /* 定位在 .footer 底部 */
+    left: 50%; /* 將版權資訊的左邊緣設置在 .footer 中心 */
+    transform: translateX(-50%); /* 將版權資訊向左移動自己寬度的一半，使其中心與 .footer 中心重疊 */
+}
+  
+  
