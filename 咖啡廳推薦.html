@@ -104,20 +104,26 @@ for (let i = 0; i < links.length; i++) {
 </script>
 
 <style>
-  #map {
-    height: 500px; 
-    width: 500px;
+#map {
+    height: 550px; 
+    width: 80%;
     margin: 0 auto;
-  }
-  
-  #cardwrap {
+}
+
+main h1{
+  text-align: center;
+  font-family: noto sans tc, 微軟正黑體 ; 
+  font-weight: 600;
+}
+
+#cardwrap {
       margin:16px;
       display: flex;
       flex-wrap: wrap;
       justify-content:center;
-  }
+}
   
-  .card {
+.card {
       width:400px;
       height:450px;
       align-items:center;
@@ -129,17 +135,23 @@ for (let i = 0; i < links.length; i++) {
       /* backdrop-filter:blur(100px); */
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
       margin: 20px 0px 35px 50px;
-  }
+}
   
-  .card li{
+.card li{
       list-style: none;
       text-align: left;
-  }
+}
 
-  .card a {
+.card a {
     text-decoration:none;
     color: black;
-  }
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 210px;
+  object-fit: cover;
+}
   
 </style>
 
@@ -153,7 +165,9 @@ for (let i = 0; i < links.length; i++) {
         let card = `
           <div class="card">
             <a href="${coffeeshop['link']}" class="list">
-              <img src="${coffeeshop['image1']}" alt="book">
+              <img src="${coffeeshop['image1']}" alt="book"> 
+              <br>
+              <br>
               <h3>${coffeeshop['title']}</h3>
               <li>營業時間:${coffeeshop['time']}</li>
               <li>電話:${coffeeshop['tel']}</li>
@@ -227,10 +241,11 @@ for (let i = 0; i < links.length; i++) {
     <div>
       <div class="recipe">
         <div class="shadow">
-          <!-- <div class="text">coffee</div> -->
+          <div class="text">coffee shop</div>
         </div>
       </div>
       <main>
+        <h1>台中彰化咖啡廳推薦</h1>
         <div class="cardwrap" id="cardwrap">
         </div>
         <br>
