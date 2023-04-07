@@ -156,8 +156,8 @@ function f(json) {
           </a>
         </div>
       `
-      cardArray.push(main)
-    })
+      cardArray.push(main)  
+    });
   
     return cardArray;
   }
@@ -169,7 +169,7 @@ function f(json) {
       })
       .then(function(text) {
         let main = f(text).join('');
-        document.getElementById('cardwrap').innerHTML = main;
+        // document.getElementById('cardwrap').innerHTML = main;
       });
   };
 
