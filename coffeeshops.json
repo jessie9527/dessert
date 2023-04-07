@@ -14,7 +14,7 @@
             "latitude": "24.150176",
             "link":"https://www.instagram.com/p/CDfkj_4HJrg/?utm_source=ig_web_copy_link",
             "image1": "imgs/1-1.jpg",
-            "image2": "1-2.jpg"
+            "image2": "imgs/1-2.jpg"
         },
         {
             "id": "2",
@@ -29,8 +29,8 @@
             "longitude": "120.5734127",
             "latitude": "23.962603",
             "link":"https://www.instagram.com/p/CFQ1VLmn9AG/?utm_source=ig_web_copy_link",
-            "image1": "2-1.jpg",
-            "image2": "2-2.jpg"
+            "image1": "imgs/2-1.jpg",
+            "image2": "imgs/2-2.jpg"
 
         },
         {
@@ -46,7 +46,7 @@
             "longitude": "120.6732834",
             "latitude": "24.1706022",
             "link":"https://www.instagram.com/p/CIAlG7VnI32/?utm_source=ig_web_copy_link",
-            "image1": "3-1.jpg"
+            "image1": "imgs/3-1.jpg"
         },
         {
             "id": "4",
@@ -61,7 +61,7 @@
             "longitude": "120.5676459",
             "latitude": "23.9637576",
             "link":"https://www.instagram.com/p/CKaYDYXHoYr/?utm_source=ig_web_copy_link",
-            "image1": "4-1.jpg"
+            "image1": "imgs/4-1.jpg"
         },
         {
             "id": "5",
@@ -76,7 +76,7 @@
             "longitude": "120.6627157",
             "latitude": "24.1335479",
             "link":"https://www.instagram.com/p/CKBQIX5nvJX/?utm_source=ig_web_copy_link",
-            "image1": "5-1.jpg"
+            "image1": "imgs/5-1.jpg"
         },
         {
             "id": "6",
@@ -91,7 +91,7 @@
             "longitude": "120.6598002",
             "latitude": "24.1571368",
             "link":"https://www.instagram.com/p/CEYKt7inB0m/?utm_source=ig_web_copy_link",
-            "image1": "6-1.jpg"
+            "image1": "imgs/6-1.jpg"
         },
         {
             "id": "7",
@@ -106,7 +106,7 @@
             "longitude": "120.6591274",
             "latitude": "24.1519459",
             "link":"https://www.instagram.com/p/CFE9FSmnHAT/?utm_source=ig_web_copy_link",
-            "image1": "7-1.jpg"
+            "image1": "imgs/7-1.jpg"
         },
         {
             "id": "8",
@@ -121,9 +121,9 @@
             "longitude": "120.6567167",
             "latitude": "24.1372235",
             "link":"https://www.instagram.com/p/CYBAAXwvwrI/?utm_source=ig_web_copy_link",
-            "image1": "8-1.jpg",
-            "image2": "8-2.jpg",
-            "image3": "8-3.jpg"
+            "image1": "imgs/8-1.jpg",
+            "image2": "imgs/8-2.jpg",
+            "image3": "imgs/8-3.jpg"
         },
         {
             "id": "9",
@@ -138,8 +138,8 @@
             "longitude": "120.5578238",
             "latitude": "24.2337386",
             "link":"https://www.instagram.com/p/CUNC843Pi6_/?utm_source=ig_web_copy_link",
-            "image1": "9-1.jpg",
-            "image2": "9-2.jpg"
+            "image1": "imgs/9-1.jpg",
+            "image2": "imgs/9-2.jpg"
         },
         {
             "id": "10",
@@ -154,9 +154,9 @@
             "longitude": "120.6590917",
             "latitude": "4.1534242",
             "link":"https://www.instagram.com/p/CatJeSXvttM/?utm_source=ig_web_copy_link",
-            "image1": "10-1.jpg",
-            "image2": "10-2.jpg",
-            "image3": "10-3.jpg"
+            "image1": "imgs/10-1.jpg",
+            "image2": "imgs/10-2.jpg",
+            "image3": "imgs/10-3.jpg"
         }
     ]
 }

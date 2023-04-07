@@ -110,14 +110,15 @@ for (let i = 0; i < links.length; i++) {
     margin: 0 auto;
   }
   
-  .cardwrap {
+  #cardwrap {
       margin:16px;
       display: flex;
+      flex-wrap: wrap;
       justify-content:center;
   }
   
   .card {
-      width:400px;
+      width:300px;
       height:400px;
       align-items:center;
       justify-content :center;
@@ -128,6 +129,7 @@ for (let i = 0; i < links.length; i++) {
       /* backdrop-filter:blur(100px); */
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
       margin-left: 45px;
+      margin-bottom: 25px;
   }
   
   .card li{
@@ -138,42 +140,43 @@ for (let i = 0; i < links.length; i++) {
 </style>
 
 <script>
-function f(json) {
-    let jsonObj = JSON.parse(json);
-    let cardArray = [];
-  
-    jsonObj['coffeeshops'].slice(0,3).forEach(function(coffeeshop) {
-      
-      let main = `
-        <div class="card">
-          <a href="${coffeeshop['link']}" class="list">
-            <img src="${coffeeshop['image1']}" alt="book">
-            <h3>${coffeeshop['title']}</h3>
-            <li>營業時間:${coffeeshop['time']}</li>
-            <li>電話:${coffeeshop['tel']}</li>
-            <li>地址:${coffeeshop['address']}</li>
-            <li>低消:${coffeeshop['minimum order']}</li>
-          </a>
-        </div>
-      `
-      cardArray.push(main)  
-    });
-  
-    return cardArray;
-  }
-  
-  window.onload = function() {
-    fetch('https://raw.githubusercontent.com/jessie9527/report/main/coffeeshop.json')
-      .then(function(response) {
-        return response.text();
-      })
-      .then(function(text) {
-        let main = f(text).join('');
-        // document.getElementById('cardwrap').innerHTML = main;
+  function f(json) {
+      let jsonObj = JSON.parse(json);
+      let main = '';
+    
+      jsonObj['coffeeshops'].forEach(function(coffeeshop) {
+        
+        let card = `
+          <div class="card">
+            <a href="${coffeeshop['link']}" class="list">
+              <img src="${coffeeshop['image1']}" alt="book">
+              <h3>${coffeeshop['title']}</h3>
+              <li>營業時間:${coffeeshop['time']}</li>
+              <li>電話:${coffeeshop['tel']}</li>
+              <li>地址:${coffeeshop['address']}</li>
+              <li>低消:${coffeeshop['minimum order']}</li>
+            </a>
+          </div>
+        `;
+        
+        main += card;
       });
-  };
-
-</script>
+    
+      return main;
+    }
+    
+    window.onload = function() {
+      fetch('https://raw.githubusercontent.com/jessie9527/report/main/coffeeshop.json')
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(text) {
+          let main = f(text);
+          document.getElementById('cardwrap').innerHTML = main;
+        });
+    };
+  </script>
+  
 
 <body>
     <div class="shortcut">
