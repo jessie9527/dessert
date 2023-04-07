@@ -36,7 +36,7 @@ let json = `
         },
         {
             "id": "3",
-            "title": "萊姆16手作甜點-Lime 16 Patisserie",
+            "title": "萊姆16手作甜點",
             "city": "台中市北區",
             "address": "台中市北區天津一街42號",
             "time": "13:30-19:00 (週四公休)",
@@ -128,7 +128,7 @@ let json = `
         },
         {
             "id": "9",
-            "title": "初咖啡The Origin Coffee Roaster in Shalu",
+            "title": "初咖啡",
             "city": "台中市沙鹿區",
             "address": "台中市沙鹿區四平街43-1號",
             "time": "9:00-18:00",
