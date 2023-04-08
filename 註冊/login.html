@@ -6,7 +6,7 @@
     <title>Jessie dessert</title>
     <link rel="stylesheet" href="../narbar.css">
     <link rel="stylesheet" href="../top.css">
-
+    <link rel="stylesheet" href="./login.css">
     <link rel="shortcut icon" href="../img/S__135938101.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Code+Pro&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <script>
 let links = document.getElementsByTagName("a");
@@ -31,6 +34,23 @@ for (let i = 0; i < links.length; i++) {
 
 </script>
 
+<script>
+$(document).ready(function(){
+	$(".veen .rgstr-btn button").click(function(){
+		$('.veen .wrapper').addClass('move');
+		$('.body').css('background','#e0b722');
+		$(".veen .login-btn button").removeClass('active');
+		$(this).addClass('active');
+
+});
+$(".veen .login-btn button").click(function(){
+		$('.veen .wrapper').removeClass('move');
+		$('.body').css('background','#ff4931');
+		$(".veen .rgstr-btn button").removeClass('active');
+		$(this).addClass('active');
+	});
+});
+</script>
 
 <body>
     <div class="shortcut">
@@ -74,13 +94,56 @@ for (let i = 0; i < links.length; i++) {
     </nav>
     </div> 
     <br>
-    <div>
-      <main>
-       
-      </main>
-    </div>
-    <br>
-    <br>
+    <main class="body">
+      <div class="veen">
+        <div class="login-btn splits">
+          <p>Already an user?</p>
+          <button class="active">Login</button>
+        </div>
+        <div class="rgstr-btn splits">
+          <p>Don't have an account?</p>
+          <button>Register</button>
+        </div>
+        <div class="wrapper">
+          <form id="login" tabindex="500">
+            <h3>Login</h3>
+            <div class="mail">
+              <input type="mail" name="">
+              <label>Mail or Username</label>
+            </div>
+            <div class="passwd">
+              <input type="password" name="">
+              <label>Password</label>
+            </div>
+            <div class="submit">
+              <button class="dark">Login</button>
+            </div>
+          </form>
+          <form id="register" tabindex="502">
+            <h3>Register</h3>
+            <div class="name">
+              <input type="text" name="">
+              <label>Full Name</label>
+            </div>
+            <div class="mail">
+              <input type="mail" name="">
+              <label>Mail</label>
+            </div>
+            <div class="uid">
+              <input type="text" name="">
+              <label>User Name</label>
+            </div>
+            <div class="passwd">
+              <input type="password" name="">
+              <label>Password</label>
+            </div>
+            <div class="submit">
+              <button class="dark">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>	
+    </main>
     <div class="footer">
       <div class="wrapper">
           <div class="info">┃網路訂單客服┃
