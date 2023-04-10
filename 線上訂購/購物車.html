@@ -36,138 +36,10 @@ for (let i = 0; i < links.length; i++) {
 
 </script>
 
-<style> 
-  main h1{
-        text-align: center;
-        font-family: noto sans tc, 微軟正黑體 ; 
-        font-weight: 600;
-  }
-      
-  .productList{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:center;
-        margin:16px;
-  }
-  
-  .gp {
-        width:350px;
-        height:450px;
-        align-items:center;
-        justify-content :center;
-        text-align:center;
-        /* background-color: rgb(232, 228, 228); */
-        padding: 50px;
-        border-radius:12px;
-        /* backdrop-filter:blur(100px); */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        margin: 20px 0px 35px 50px;
-  }
-    
-  .gp h5 {
-        font-family: noto sans tc, 微軟正黑體 ; 
-        font-weight: 600;
-  }
 
-  .gp p{
-        list-style: none;
-        text-align: center;
-        font-family: noto sans tc, 微軟正黑體 ; 
-
-  }
-  
-  .gp1 {
-    height: 200px;
-    text-align: center;
-  }
-
-  .gp img {
-    max-width: 100%;
-    max-height: 200px;
-    display: block;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-    
-  </style>
 
 <script>
-function f(json) {
-      let jsonObj = JSON.parse(json);
-      let productList = '<div class="productList">';
-        
-      jsonObj['products'].forEach(function(product) {
-        
-        let group_header = `
-          <div class="gp">
-            <div class="gp1">
-              <img src="${product['image_tag']}" alt=""${product.title}""> 
-            </div>
-              <h5>${product['title']}</h5>
-              <p>$${product['price']}</p>
-        `
 
-        if (product.id === 8) {
-            let flavors = product.flavor.split('、');
-            group_header += '<label for="flavor">口味:&nbsp</label><select id="flavor">';
-            flavors.forEach(function(flavor) {
-                group_header += `<option value="${flavor}">${flavor}</option>`;
-            });
-          group_header += '</select>&nbsp';
-          }
-
-        let group_footer = `
-              
-              <label for="quantity-${product.id}">數量:</label>
-              <select id="quantity-${product.id}" name="quantity">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-              </select>
-              <br>
-              <br>
-              <button class="buybnt">加入購物車</button>
-        `
-        
-        let productCard = group_header + group_footer + '</div>';
-        productList += productCard;
-      });
-    
-        productList += '</div>';
-        return productList;
-    }
-    
-    window.onload = function() {
-      fetch('https://raw.githubusercontent.com/jessie9527/report/main/products1.json')
-        .then(function(response) {
-          return response.text();
-        })
-        .then(function(text) {
-          let main = f(text);
-          document.getElementById('gps').innerHTML = main;
-        });
-    };
-
-const mykey = 'cart'
-
-$(document).ready(function() {
-    $(document).on('click', '.buybnt', function() {
-        let title = $(this).siblings('h5').text()
-        let price = $(this).siblings('p').text()
-        let quantity = $(this).siblings('select[name="quantity"]').val()
-        let item = {
-            title: title,
-            price: price,
-            quantity: quantity
-        }
-        let cart = JSON.parse(localStorage.getItem(mykey)) || []
-        cart.push(item)
-        localStorage.setItem(mykey, JSON.stringify(cart))
-        alert('已加入購物車')
-    })
-})
 
 </script>
 
@@ -195,7 +67,7 @@ $(document).ready(function() {
         <div>
             <ul>
                 <li><a href="../首頁.html">品牌故事</a></li>
-                <li><a href="#">線上訂購</a></li>
+                <li><a href="./線上訂購.html">線上訂購</a></li>
                 <li class="dropdown">
                     <!-- <a class="nav-link dropdown-toggle" href="./食譜分享.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
                     <a  href="../食譜分享.html">
@@ -214,16 +86,15 @@ $(document).ready(function() {
     </nav>
     </div> 
     <br>
-    <div>
+    <!-- <div>
       <div class="recipe" style="background-image: url(../onlineimg/pexels-tal-molcho-13344198.jpg);">
         <div class="shadow">
           <div class="text">Basque cheesecake</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <main>
-      <h1>線上訂購</h1>
-      <div class="gps" id="gps">
+      
     </main>
     <br>
     <div class="footer">
