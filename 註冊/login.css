@@ -16,6 +16,8 @@
     display:table;
     position: relative;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    font-family: noto sans tc, 微軟正黑體 ; 
+
 }
 
 .veen > div {
@@ -152,7 +154,7 @@
     top: -15px;
     left: 0;
     color: #4F4C50;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 @media (max-width: 767px){
