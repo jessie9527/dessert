@@ -90,6 +90,14 @@ for (let i = 0; i < links.length; i++) {
     border-radius: 5px;
   }
     
+  #dialog {
+    /* z-index: 9999; */
+    display: none;
+    font-family: noto sans tc, 微軟正黑體 ; 
+    font-size: 20px;
+  }
+  
+
   </style>
 
 <script>
@@ -183,11 +191,20 @@ $(document).ready(function() {
     })
   })
   
+
   function handleClick() {
-    setTimeout(() => {
-      alert('已加入購物車')
-    }, 1000); // 延遲 1 秒後跳轉
+  setTimeout(() => {
+    $('#dialog').dialog({   
+      modal: true,
+      buttons: {  
+        Ok: function() {
+          $(this).dialog('close');
+        }
+      }
+    });
+  }, 1000);
 }
+
 </script>
 
 
@@ -243,7 +260,11 @@ $(document).ready(function() {
     <main>
       <h1>線上訂購</h1>
       <div class="gps" id="gps">
+      
     </main>
+    <div id="dialog" title="購物車">
+        <br>  已加入購物車 <br>
+      </div>
     <br>
     <div class="footer">
       <div class="wrapper">
