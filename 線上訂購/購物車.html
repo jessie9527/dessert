@@ -106,7 +106,12 @@ $(function() {
   cart.forEach(function(item) {
     let tr = $('<tr>');
 
-    let td1 = $('<td class="td1">').html(`<img src="${item.image}" alt="${item.title}"><br>${item.title}`);
+    let td1
+    if (item.flavor == undefined) {
+        td1 = $('<td class="td1">').html(`<img src="${item.image}" alt="${item.title}"><br>${item.title}`);
+    }else{
+       td1 = $('<td class="td1">').html(`<img src="${item.image}" alt="${item.title}"><br>${item.title}(口味:${item.flavor})`);
+    }
     tr.append(td1);
 
     let td2 = $('<td class="td2">').html(` $${item.price}`);
