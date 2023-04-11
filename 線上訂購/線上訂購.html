@@ -129,7 +129,9 @@ function f(json) {
               </select>
               <br>
               <br>
-              <button class="buybnt">加入購物車</button>
+              <div class="but">
+              <button class="bubbly-button" onclick="handleClick()">加入購物車</button>
+              </div>
         `
         
         let productCard = group_header + group_footer + '</div>';
@@ -154,7 +156,7 @@ function f(json) {
 const mykey = 'cart'
 
 $(document).ready(function() {
-    $(document).on('click', '.buybnt', function() {
+    $(document).on('click', '.but', function() {
       let img = $(this).siblings('.gp1').find('img').attr('src')
       let title = $(this).siblings('h5').text()
       let price = $(this).siblings('p').text().slice(1)
@@ -178,11 +180,14 @@ $(document).ready(function() {
         cart.push(item);
       }
       localStorage.setItem(mykey, JSON.stringify(cart))
-      alert('已加入購物車')
+    })
   })
-})
-
-
+  
+  function handleClick() {
+    setTimeout(() => {
+      alert('已加入購物車')
+    }, 1000); // 延遲 1 秒後跳轉
+}
 </script>
 
 
@@ -195,7 +200,7 @@ $(document).ready(function() {
             <input placeholder="Search" type="text" />
           </div>
           </li>
-          <li><a href="#"><i></i>購物車</a></li>
+          <li><a href="./購物車.html"><i></i>購物車</a></li>
           <li><a href="../註冊/login.html"><b></b>登入/註冊</a></li>
           <li><a href="https://m.me/100063918344483" target="_blank"><u></u>聯絡我們</a></li>
         </ul>
@@ -209,7 +214,7 @@ $(document).ready(function() {
         <div>
             <ul>
                 <li><a href="../首頁.html">品牌故事</a></li>
-                <li><a href="#">線上訂購</a></li>
+                <li><a href="./線上訂購.html">線上訂購</a></li>
                 <li class="dropdown">
                     <!-- <a class="nav-link dropdown-toggle" href="./食譜分享.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
                     <a  href="../食譜分享.html">
