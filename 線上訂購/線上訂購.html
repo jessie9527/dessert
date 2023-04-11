@@ -231,16 +231,21 @@ $(document).ready(function() {
         <div>
             <ul>
                 <li><a href="../首頁.html">品牌故事</a></li>
-                <li><a href="./線上訂購.html">線上訂購</a></li>
+                <li class="dropdown">
+                  <a href="#">線上訂購</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./線上訂購.html">熱門產品</a></li>
+                    <li><a class="dropdown-item" href="./產品內容.html">產品成分</a></li>
+                  </ul>
+                </li>
                 <li class="dropdown">
                     <!-- <a class="nav-link dropdown-toggle" href="./食譜分享.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
-                    <a  href="../食譜分享.html">
-                      食譜分享</a>
+                    <a  href="../食譜分享.html">食譜分享</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./mille.html">巧克力千層蛋糕</a></li>
-                      <li><a class="dropdown-item" href="./Basque.html">巴斯克乳酪蛋糕</a></li>
-                      <li><a class="dropdown-item" href="./Tiramisu.html">提拉米蘇</a></li>
-                      <li><a class="dropdown-item" href="./taro.html">芋頭酥</a></li>
+                      <li><a class="dropdown-item" href="../recipe/mille.html">巧克力千層蛋糕</a></li>
+                      <li><a class="dropdown-item" href="../recipe/Basque.html">巴斯克乳酪蛋糕</a></li>
+                      <li><a class="dropdown-item" href="../recipe/Tiramisu.html">提拉米蘇</a></li>
+                      <li><a class="dropdown-item" href="../recipe/taro.html">芋頭酥</a></li>
                     </ul>
                   </li>
                 <li><a href="../咖啡廳推薦.html">咖啡廳推薦</a></li>
@@ -258,7 +263,7 @@ $(document).ready(function() {
       </div>
     </div>
     <main>
-      <h1>線上訂購</h1>
+      <h1>熱門產品</h1>
       <div class="gps" id="gps">
       
     </main>
