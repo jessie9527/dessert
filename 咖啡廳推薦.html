@@ -43,7 +43,7 @@ for (let i = 0; i < links.length; i++) {
 
 <script>
     function fetchCoffeeShops(complete) {
-       let url = 'https://raw.githubusercontent.com/jessie9527/report/main/coffeeshop.json'
+       let url = 'https://raw.githubusercontent.com/jessie9527/report/main/coffeeshops.json'
        fetch(url)
        .then(function(response) {
            return response.json()
@@ -227,7 +227,7 @@ main h1{
     }
     
     window.onload = function() {
-      fetch('https://raw.githubusercontent.com/jessie9527/report/main/coffeeshop.json')
+      fetch('https://raw.githubusercontent.com/jessie9527/report/main/coffeeshops.json')
         .then(function(response) {
           return response.text();
         })

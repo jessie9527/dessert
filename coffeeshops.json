@@ -152,11 +152,41 @@
             "pricelevel": "100起",
             "minimum order": "一杯飲品",
             "longitude": "120.6590917",
-            "latitude": "4.1534242",
+            "latitude": "24.1534242",
             "link":"https://www.instagram.com/explore/locations/103240671380052/chewy/",
             "image1": "imgs/10-1.jpg",
             "image2": "imgs/10-2.jpg",
             "image3": "imgs/10-3.jpg"
+        },
+        {
+            "id": "11",
+            "title": "先生千層",
+            "city": "台中市西區",
+            "address": "台中市西區五權七街53號",
+            "time": "12:30-19:00",
+            "tel": "04-23722199",
+            "evaluate": "8",
+            "pricelevel": "200起",
+            "minimum order": "",
+            "longitude": "120.6612803",
+            "latitude": "24.135069",
+            "link":"https://www.instagram.com/explore/locations/103292351313595/sensei/",
+            "image3": "imgs/11-1.jpg"
+        },
+        {
+            "id": "12",
+            "title": "Overture序曲 散策65",
+            "city": "台中市北區",
+            "address": "台中市北區北興街65號",
+            "time": "12:00-19:00",
+            "tel": "04-22356865",
+            "evaluate": "7",
+            "pricelevel": "200起",
+            "minimum order": "任一甜點or飲料",
+            "longitude": "120.6666511",
+            "latitude": "24.1509531",
+            "link":"https://www.instagram.com/explore/locations/2066238527010999/overture-65/",
+            "image3": "imgs/12-1.jpg"
         }
     ]
 }
