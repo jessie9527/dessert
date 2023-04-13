@@ -119,63 +119,68 @@ main h3{
 </style>
 
 <script>
-$(function() {
-  const mykey = 'cart';
-  let cart = JSON.parse(localStorage.getItem(mykey)) || [];
+  function shopcart() {
+    const mykey = 'cart';
+    let cart = JSON.parse(localStorage.getItem(mykey)) || [];
 
-  let tbody = $('table.cart tbody');
-  let total = 0;
+    let tbody = $('table.cart tbody');
+    let total = 0;
+    tbody.empty()
 
-  cart.forEach(function(item) {
-    let tr = $('<tr>');
+    cart.forEach(function(item) {
+      let tr = $('<tr>');
 
-    let td1
-    if (item.flavor == undefined) {
-        td1 = $('<td class="td1">').html(`<img src="${item.image}" alt="${item.title}"><br>${item.title}`);
-    }else{
-       td1 = $('<td class="td1">').html(`<img src="${item.image}" alt="${item.title}"><br>${item.title}(口味:${item.flavor})`);
-    }
-    tr.append(td1);
+      let td1
+      if (item.flavor == undefined) {
+          td1 = $('<td class="td1">').html(`<img src="${item.image}" alt="${item.title}"><br>${item.title}`);
+      }else{
+        td1 = $('<td class="td1">').html(`<img src="${item.image}" alt="${item.title}"><br>${item.title}(口味:${item.flavor})`);
+      }
+      tr.append(td1);
 
-    let td2 = $('<td class="td2">').html(` $${item.price}`);
-    tr.append(td2);
+      let td2 = $('<td class="td2">').html(` $${item.price}`);
+      tr.append(td2);
 
-    let td3 = $('<td class="td3">').html(item.quantity);
-    tr.append(td3);
+      let td3 = $('<td class="td3">').html(item.quantity);
+      tr.append(td3);
 
-    let subtotal = item.price * item.quantity;
-    total += subtotal;
-    let td4 = $('<td class="td4">').html(`$${subtotal}`);
-    tr.append(td4);
+      let subtotal = item.price * item.quantity;
+      total += subtotal;
+      let td4 = $('<td class="td4">').html(`$${subtotal}`);
+      tr.append(td4);
 
-    let td5 = $('<td class="td5">');
-    let button = $('<img id="delete">').attr('src', './images/close_FILL0_wght600_GRAD0_opsz40.png');
-    button.on('click', function() {
-      // 從購物車中移除商品
-      cart = cart.filter(function(cartItem) {
-        return cartItem.title !== item.title;
+      let td5 = $('<td class="td5">');
+      let button = $('<img id="delete">').attr('src', './images/close_FILL0_wght600_GRAD0_opsz40.png');
+      button.on('click', function() {
+        // 從購物車中移除商品
+        cart = cart.filter(function(cartItem) {
+          return cartItem.title !== item.title;
+        });
+
+        // 將更新後的購物車儲存到 LocalStorage
+        localStorage.setItem(mykey, JSON.stringify(cart));
+
+        // 刪除該商品所在的表格列
+        tr.remove();
+
+        // 更新總計
+        total -= subtotal;
+        $('.totalPrice').html(`總計 $<span class="total">${total}</span>`);
       });
+      td5.append(button);
+      tr.append(td5);
 
-      // 將更新後的購物車儲存到 LocalStorage
-      localStorage.setItem(mykey, JSON.stringify(cart));
-
-      // 刪除該商品所在的表格列
-      tr.remove();
-
-      // 更新總計
-      total -= subtotal;
-      $('.totalPrice').html(`總計 $<span class="total">${total}</span>`);
+      tbody.append(tr);
     });
-    td5.append(button);
-    tr.append(td5);
 
-    tbody.append(tr);
-  });
+    $('.totalPrice').html(`總計 $<span class="total">${total}</span>`);
+  };
 
-  $('.totalPrice').html(`總計 $<span class="total">${total}</span>`);
-});
+  window.addEventListener('storage', shopcart);
 
-
+  window.onload = function() {
+    shopcart();
+  };
 
 </script>
 
@@ -245,13 +250,6 @@ $(function() {
     </nav>
     </div> 
     <br>
-    <!-- <div>
-      <div class="recipe" style="background-image: url(../onlineimg/pexels-tal-molcho-13344198.jpg);">
-        <div class="shadow">
-          <div class="text">Basque cheesecake</div>
-        </div>
-      </div>
-    </div> -->
     <main>
       <div>
             <h3>購物車</h3>
