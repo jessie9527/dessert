@@ -1,0 +1,41 @@
+.but {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubbly-button {
+    padding: 10px 40px;
+    border-radius: 0.5rem;
+    background: -webkit-linear-gradient(90deg, rgb(177, 10, 235), rgb(242, 13, 41));
+    background: linear-gradient(90deg, rgb(177, 10, 235), rgb(242, 13, 41));
+    position: relative;
+    transition: 1s;
+    border: none;
+    color: azure;
+}
+
+.bubbly-button:hover {  
+
+    background: -webkit-linear-gradient(90deg, rgb(148, 10, 235), rgb(239, 18, 10));
+    background: linear-gradient(90deg, rgb(148, 10, 235), rgb(239, 18, 10));
+    
+}
+
+.bubbly-button::after {
+    content:'';
+    position: absolute;
+    inset: 0;
+    border-radius: 0.5rem;
+    transition: 1s;
+    box-shadow: 0 0 30px 15px #D91CF4;
+    opacity: 0;
+}
+
+.bubbly-button:active::after {
+    transition: Os;
+    box-shadow: 0 0 0px 0px #EB0A60;
+    opacity: 1;
+}
