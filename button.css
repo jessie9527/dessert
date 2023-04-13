@@ -9,14 +9,16 @@
 .bubbly-button {
     padding: 10px 40px;
     border-radius: 0.2rem;
-    background: #fbd266;
     position: relative;
     transition: 1s;
     border: none;
+    color: #fff;
+    background: #9297AB;
 }
 
 .bubbly-button:hover {
-    background: #ffdc84;
+    background: #53565C;
+    color: #fff;
 }
 
 .bubbly-button::after {
@@ -25,12 +27,12 @@
     inset: 0;
     border-radius: 0.2rem;
     transition: 1s;
-    box-shadow: 0 0 30px 15px #ffdc84;
+    box-shadow: 0 0 30px 15px #82898D;
     opacity: 0;
 }
 
 .bubbly-button:active::after {
     transition: Os;
-    box-shadow: 0 0 0px 0px#ffdc84;
+    box-shadow: 0 0 0px 0px#82898D;
     opacity: 1;
 }

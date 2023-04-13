@@ -9,14 +9,14 @@
 .bubbly-button1 {
     padding: 10px 40px;
     border-radius: 0.2rem;
-    background: #fbd266;
+    background: #fff;
     position: relative;
     transition: 1s;
     border: none;
 }
 
 .bubbly-button1:hover {
-    background: #ffdc84;
+    background: #B2B2A8;
 }
 
 .bubbly-button1::after {
