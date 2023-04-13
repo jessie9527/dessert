@@ -171,7 +171,7 @@
             "longitude": "120.6612803",
             "latitude": "24.135069",
             "link":"https://www.instagram.com/explore/locations/103292351313595/sensei/",
-            "image3": "imgs/11-1.jpg"
+            "image1": "imgs/11-1.jpg"
         },
         {
             "id": "12",
@@ -186,7 +186,7 @@
             "longitude": "120.6666511",
             "latitude": "24.1509531",
             "link":"https://www.instagram.com/explore/locations/2066238527010999/overture-65/",
-            "image3": "imgs/12-1.jpg"
+            "image1": "imgs/12-1.jpg"
         }
     ]
 }
