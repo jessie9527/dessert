@@ -61,12 +61,12 @@ for (let i = 0; i < links.length; i++) {
     }
     
     //不同evaluate換不同顏色
-    function getColor(evaluate) {
-       let iEvaluate = parseInt(evaluate)
-       if (iEvaluate == 10) return '#e9311a'
-       if (iEvaluate == 9) return '#ed6335'
-       if (iEvaluate == 8) return '#ecae7d'
-       if (iEvaluate == 7) return '#ecae7d'
+    function getColor(id) {
+       let iEvaluate = parseInt(id)
+       if (iEvaluate < 5) return '#e9311a'
+       if (iEvaluate < 9) return '#ed6335'
+       if (iEvaluate < 13) return '#ecae7d'
+      //  if (iEvaluate == 7) return '#ecae7d'
     }
     
     
@@ -83,8 +83,8 @@ for (let i = 0; i < links.length; i++) {
         coffeeshops.forEach(function(coffeeshop) {
             const pinViewScaled = new google.maps.marker.PinView({
                 scale: 0.9,
-                glyph: coffeeshop.evaluate,
-                background: getColor(coffeeshop.evaluate),
+                glyph: coffeeshop.id,
+                background: getColor(coffeeshop.id),
             });
     
                const marker = new google.maps.marker.AdvancedMarkerView({   //地圖上紅色標記
