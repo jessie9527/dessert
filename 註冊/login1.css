@@ -1,0 +1,118 @@
+main {
+    background: #c1bdba;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    /* width: 40%; */
+    margin: 100px auto;
+    background: rgba(255,255,255,.5);
+    min-height: 400%;
+    display:table;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    font-family: noto sans tc, 微軟正黑體 ; 
+}
+
+.main ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin:20px 0 20px 0;
+}
+
+/* .main .tab {
+    width: 50%;
+    
+} */
+
+.main li {
+    width: 50%;
+    display: inline-block;
+}
+
+.main .formbox {
+    height: 600px;
+    width: 500px;
+    position: relative; /* 加上此行 */
+}
+
+.main .formbox > form{
+    padding: 15px 30px 30px;
+    width: 100%;
+    transition: all .5s;
+    background: rgba(255,255,255,.5);
+    height: 100%;
+}
+
+.main .formbox > form:focus{
+    outline: none;
+}
+
+.main #login {
+    visibility: visible;
+    /* transform: translateY(0) translateX(0); */
+    padding-top: 20%;
+}
+  
+.main #register {
+    visibility: hidden;
+    /* transform: translateY(-80%) translateX(100%); */
+    position: absolute;
+    top: 0; /* 加上此行 */
+    left: 0; /* 加上此行 */
+    /* transform: translate(-50%, -50%);  */
+}
+  
+
+.main .formbox > form > div {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.main .formbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    background: #fff;
+    color: #999;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.main .formbox h3{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main .formbox input{
+    width: 100%;
+    height: 40px;
+    padding: 15px 15px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+
+.main .formbox .bubbly-button {
+    border-radius: 50px;
+    border: none;
+}
+
+.submit {
+    text-align: center;
+}
+
+.main .formbox input:focus ~ label{
+    top: -15px;
+    left: 0;
+    color: #4F4C50;
+    font-size: 13px;
+}
+
